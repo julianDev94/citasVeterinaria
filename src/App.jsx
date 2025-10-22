@@ -1,10 +1,16 @@
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { Container } from "react-bootstrap";
 
 function App() {
-  return <>
-  
-  </>;
+  return (
+    <section>
+      <Container>
+    
+
+      </Container>
+    </section>
+  );
 }
 
 export default App;
