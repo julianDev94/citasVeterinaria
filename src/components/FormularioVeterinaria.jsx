@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import {Form, Col, Row} from "react-bootstrap";
 
 const FormularioVeterinaria = () => {
   return (
@@ -7,26 +7,49 @@ const FormularioVeterinaria = () => {
       <div className="border p-3 bg-white">
         <h2>Llenar el formulario para crear la cita</h2>
       </div>
-      <Form className="shadow-lg rounded border p-3 bg-info">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <Form className="border shadow-lg p-3">
+      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+        <Form.Label column sm="2">
+          Nombre de mascota:
+        </Form.Label>
+        <Col sm="10">
+          <Form.Control type="text" placeholder="Nombre de mascota" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+        <Form.Label column sm="2">
+          Nombre de dueño:
+        </Form.Label>
+        <Col sm="10">
+          <Form.Control type="text" placeholder="Nombre de dueño" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} className="mb-3 d-flex" controlId="formPlaintextPassword">
+        <Form.Label column sm="2">
+          Fecha
+        </Form.Label>
+        <Col sm="4">
+          <Form.Control type="password" placeholder="dd/mm/yy" />
+        </Col>
+        <Form.Label column sm="2">
+          Hora
+        </Form.Label>
+        <Col sm="4">
+          <Form.Control type="password" placeholder="hh:mm" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+        <Form.Label column sm="2">
+          Sintomas:
+        </Form.Label>
+        <Col sm="10">
+          <Form.Control type="text" placeholder="Describir sintomas" />
+        </Col>
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
     </article>
   );
 };
