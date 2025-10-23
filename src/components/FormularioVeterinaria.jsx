@@ -31,10 +31,10 @@ const FormularioVeterinaria = () => {
         <Col sm="4">
           <Form.Control type="password" placeholder="dd/mm/yy" />
         </Col>
-        <Form.Label column sm="2">
+        <Form.Label column sm="1">
           Hora
         </Form.Label>
-        <Col sm="4">
+        <Col sm="5">
           <Form.Control type="password" placeholder="hh:mm" />
         </Col>
       </Form.Group>
@@ -46,9 +46,12 @@ const FormularioVeterinaria = () => {
           <Form.Control type="text" placeholder="Describir sintomas" />
         </Col>
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <div className="d-flex justify-content-center">
+<Button variant="primary" type="submit">
+        Agregar nueva cita
       </Button>
+      </div>
+      
     </Form>
     </article>
   );
