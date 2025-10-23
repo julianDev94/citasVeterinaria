@@ -9,7 +9,7 @@ function App() {
     <section>
       <Container>
         <TituloVeterinaria />
-        <FormularioVeterinaria /  >
+        <FormularioVeterinaria />
       </Container>
     </section>
   );
