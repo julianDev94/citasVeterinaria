@@ -18,7 +18,7 @@ function App() {
   useEffect(()=>{
     const citasStorage = JSON.parse(localStorage.getItem("citasKey")) || [];
     setCitas(citasStorage);
-  },[])
+  },[]);
   
 
   return (
@@ -26,7 +26,7 @@ function App() {
       <Container>
         <TituloVeterinaria />
         <FormularioVeterinaria  agregarCita={agregarCita} />
-        <CitasVeterinaria />
+        <CitasVeterinaria citas={citas} />
       </Container>
     </section>
   );
