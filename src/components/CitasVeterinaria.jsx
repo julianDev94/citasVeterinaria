@@ -3,7 +3,15 @@ import { Button, Card, Col, Row, Form } from "react-bootstrap";
 const CitasVeterinaria = ({ citas }) => {
   return (
     <section className="my-3">
-      <h4 className="border p-3 text-center rounded shadow-lg">No hay Citas</h4>
+      {citas.length === 0 ? (
+        <h4 className="border p-3 text-center rounded shadow-lg">
+          No hay Citas
+        </h4>
+      ) : (
+        <h4 className="border p-3 text-center rounded shadow-lg">
+          Citas existentes
+        </h4>
+      )}
       <article className="border p-3 bg-secondary">
         <Row xs={1} md={2} className="g-4">
           {citas.map((cita, idx) => (
