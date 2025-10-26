@@ -51,6 +51,7 @@ const FormularioVeterinaria = ({agregarCita}) => {
               minLength={3}
               maxLength={30}
               onChange={(e) => setNombreMascota(e.target.value)}
+              value={nombreMascota}
             />
           </Col>
         </Form.Group>
@@ -70,6 +71,7 @@ const FormularioVeterinaria = ({agregarCita}) => {
               minLength={3}
               maxLength={30}
               onChange={(e) => setNombreDuenio(e.target.value)}
+              value={nombreDuenio}
             />
           </Col>
         </Form.Group>
@@ -87,6 +89,7 @@ const FormularioVeterinaria = ({agregarCita}) => {
               placeholder="dd/mm/yy"
               required
               onChange={(e) => setFecha(e.target.value)}
+              value={fecha}
             />
           </Col>
           <Form.Label column sm="1" className=" fw-bold">
@@ -98,6 +101,7 @@ const FormularioVeterinaria = ({agregarCita}) => {
               placeholder="hh:mm"
               required
               onChange={(e) => setHora(e.target.value)}
+              value={hora}
             />
           </Col>
         </Form.Group>
