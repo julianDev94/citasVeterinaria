@@ -117,6 +117,7 @@ const FormularioVeterinaria = ({agregarCita}) => {
               minLength={3}
               maxLength={50}
               onChange={(e) => setSintoma(e.target.value)}
+              value={sintoma}
             />
           </Col>
         </Form.Group>
