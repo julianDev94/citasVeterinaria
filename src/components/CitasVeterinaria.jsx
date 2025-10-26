@@ -69,7 +69,9 @@ const CitasVeterinaria = ({ citas, borrarCita }) => {
                   </Form.Group>
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-end">
-                  <Button variant="danger" onClick={()=>borrarCita(idx)}>Borrar</Button>
+                  <Button variant="danger" onClick={()=>
+                    
+                    borrarCita(idx)}>Borrar</Button>
                 </Card.Footer>
               </Card>
             </Col>
