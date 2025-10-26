@@ -1,7 +1,4 @@
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import { Button } from 'react-bootstrap';
+import { Button, Card, Col, Row, Form } from "react-bootstrap";
 
 const CitasVeterinaria = () => {
   return (
@@ -12,17 +9,60 @@ const CitasVeterinaria = () => {
           {Array.from({ length: 4 }).map((_, idx) => (
             <Col key={idx}>
               <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
+                <Card.Header className="d-flex">
+                  <div className="circulo-img me-3">
+                    <p></p>
+                  </div>
+                  <div>
+                    <p>Mascota: Firulas</p>
+                    <p>Dueño: Pepe</p>
+                  </div>
+                </Card.Header>
+                <Card.Body className="bg-info">
                   <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    <Form.Group
+                      as={Row}
+                      className="mb-3"
+                      controlId="formHorizontalEmail"
+                    >
+                      <Form.Label column sm={2}>
+                        Fecha:
+                      </Form.Label>
+                      <Col sm={10}>
+                        <Form.Control type="text" placeholder="dd/mm/yyyy" />
+                      </Col>
+                    </Form.Group>
+                    <Form.Group
+                      as={Row}
+                      className="mb-3"
+                      controlId="formHorizontalEmail"
+                    >
+                      <Form.Label column sm={2}>
+                        Hora:
+                      </Form.Label>
+                      <Col sm={10}>
+                        <Form.Control type="text" placeholder="hh:mm" />
+                      </Col>
+                    </Form.Group>
+                  
+                   <Form.Group
+                      as={Row}
+                      className="mb-3"
+                      controlId="formHorizontalEmail"
+                    >
+                      <Form.Label column sm={2}>
+                        Sintomas:
+                      </Form.Label>
+                      <Col sm={10}>
+                        <Form.Control type="text" placeholder="describir sintomas" />
+                      </Col>
+                    </Form.Group>
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  
                 </Card.Body>
-                
+                <Card.Footer className="d-flex justify-content-end">
+                  <Button variant="danger">Borrar</Button>
+                </Card.Footer>
               </Card>
             </Col>
           ))}

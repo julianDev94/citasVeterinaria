@@ -1,5 +1,4 @@
-import Button from "react-bootstrap/Button";
-import { Form, Col, Row } from "react-bootstrap";
+import { Form, Col, Row, Button } from "react-bootstrap";
 
 const FormularioVeterinaria = () => {
   return (
