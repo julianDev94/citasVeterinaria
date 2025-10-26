@@ -4,7 +4,7 @@ import FormularioVeterinaria from "./components/FormularioVeterinaria";
 import TituloVeterinaria from "./components/TituloVeterinaria";
 import CitasVeterinaria from "./components/CitasVeterinaria";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [citas, setCitas] = useState([]);
@@ -15,6 +15,10 @@ function App() {
     localStorage.setItem("citasKey", JSON.stringify(nuevaCita));
   }
 
+  useEffect(()=>{
+    const citasStorage = JSON.parse(localStorage.getItem("citasKey"));
+    setCitas(citasStorage);
+  },[])
   
 
   return (
