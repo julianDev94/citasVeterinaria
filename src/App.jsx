@@ -15,6 +15,12 @@ function App() {
     localStorage.setItem("citasKey", JSON.stringify(nuevaCita));
   }
 
+  const borrarCita = (indice) =>{
+    const citaBorrada = citas.filter((_, index) => indice !== index);
+    setCitas(citaBorrada);
+    localStorage.setItem("citasKey", JSON.stringify(citaBorrada));
+  }
+
   useEffect(()=>{
     const citasStorage = JSON.parse(localStorage.getItem("citasKey")) || [];
     setCitas(citasStorage);
@@ -26,7 +32,7 @@ function App() {
       <Container>
         <TituloVeterinaria />
         <FormularioVeterinaria  agregarCita={agregarCita} />
-        <CitasVeterinaria citas={citas} />
+        <CitasVeterinaria citas={citas} borrarCita={borrarCita} />
       </Container>
     </section>
   );
