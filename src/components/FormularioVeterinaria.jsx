@@ -8,7 +8,11 @@ const FormularioVeterinaria = () => {
         <h2>Llenar el formulario para crear la cita</h2>
       </div>
       <Form className="border shadow-lg p-3 rounded bg-info">
-        <Form.Group as={Row} className="mb-3" controlId="formPlaintextNombreMascota">
+        <Form.Group
+          as={Row}
+          className="mb-3"
+          controlId="formPlaintextNombreMascota"
+        >
           <Form.Label column sm="2" className=" fw-bold">
             Nombre de mascota:
           </Form.Label>
@@ -22,7 +26,11 @@ const FormularioVeterinaria = () => {
             />
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formPlaintextNombreDueño">
+        <Form.Group
+          as={Row}
+          className="mb-3"
+          controlId="formPlaintextNombreDueño"
+        >
           <Form.Label column sm="2" className=" fw-bold">
             Nombre de dueño:
           </Form.Label>
