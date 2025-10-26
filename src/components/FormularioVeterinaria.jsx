@@ -18,6 +18,12 @@ const FormularioVeterinaria = ({agregarCita}) => {
       sintoma
     }
     agregarCita(cita);
+
+    setNombreMascota("");
+    setNombreDuenio("");
+    setFecha("");
+    setHora("");
+    setSintoma("");
   }
 
   return (

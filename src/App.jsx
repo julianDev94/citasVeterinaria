@@ -16,7 +16,7 @@ function App() {
   }
 
   useEffect(()=>{
-    const citasStorage = JSON.parse(localStorage.getItem("citasKey"));
+    const citasStorage = JSON.parse(localStorage.getItem("citasKey")) || [];
     setCitas(citasStorage);
   },[])
   
