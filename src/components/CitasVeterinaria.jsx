@@ -6,59 +6,59 @@ const CitasVeterinaria = () => {
       <h4 className="border p-3 text-center rounded shadow-lg">No hay Citas</h4>
       <article className="border p-3 bg-secondary">
         <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 4 }).map((_, idx) => (
+          {Array.from({ length: 1 }).map((_, idx) => (
             <Col key={idx}>
               <Card>
                 <Card.Header className="d-flex">
                   <div className="circulo-img me-3">
-                    <p></p>
+                    <img />
                   </div>
                   <div>
-                    <p>Mascota: Firulas</p>
-                    <p>Dueño: Pepe</p>
+                    <div>Mascota: Firulas</div>
+                    <div>Dueño: Pepe</div>
                   </div>
                 </Card.Header>
                 <Card.Body className="bg-info">
-                  <Card.Text>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formHorizontalEmail"
-                    >
-                      <Form.Label column sm={2}>
-                        Fecha:
-                      </Form.Label>
-                      <Col sm={10}>
-                        <Form.Control type="text" placeholder="dd/mm/yyyy" />
-                      </Col>
-                    </Form.Group>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formHorizontalEmail"
-                    >
-                      <Form.Label column sm={2}>
-                        Hora:
-                      </Form.Label>
-                      <Col sm={10}>
-                        <Form.Control type="text" placeholder="hh:mm" />
-                      </Col>
-                    </Form.Group>
-                  
-                   <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formHorizontalEmail"
-                    >
-                      <Form.Label column sm={2}>
-                        Sintomas:
-                      </Form.Label>
-                      <Col sm={10}>
-                        <Form.Control type="text" placeholder="describir sintomas" />
-                      </Col>
-                    </Form.Group>
-                  </Card.Text>
-                  
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formHorizontalFecha"
+                  >
+                    <Form.Label column sm={2} md={4}>
+                      Fecha:
+                    </Form.Label>
+                    <Col sm={10} md={8}>
+                      <Form.Control type="text" placeholder="dd/mm/yyyy" />
+                    </Col>
+                  </Form.Group>
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formHorizontalHora"
+                  >
+                    <Form.Label column sm={2} md={4}>
+                      Hora:
+                    </Form.Label>
+                    <Col sm={10} md={8}>
+                      <Form.Control type="text" placeholder="hh:mm" />
+                    </Col>
+                  </Form.Group>
+
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formHorizontalSintomas"
+                  >
+                    <Form.Label column sm={2} md={4}>
+                      Sintomas:
+                    </Form.Label>
+                    <Col sm={10} md={8}>
+                      <Form.Control
+                        type="text"
+                        placeholder="describir sintomas"
+                      />
+                    </Col>
+                  </Form.Group>
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-end">
                   <Button variant="danger">Borrar</Button>
