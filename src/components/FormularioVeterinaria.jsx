@@ -4,7 +4,7 @@ const FormularioVeterinaria = () => {
   return (
     <article>
       <div className="border p-3 bg-white shadow-lg mb-4 rounded">
-        <h2>Llenar el formulario para crear la cita</h2>
+        <h4>Llenar el formulario para crear la cita</h4>
       </div>
       <Form className="border shadow-lg p-3 rounded bg-info">
         <Form.Group
