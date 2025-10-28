@@ -8,14 +8,16 @@ Esta aplicacion permite administrar citas para pacientes de una veterinaria. El 
 - [React-Bootstrap](https://react-bootstrap.github.io)
 - [SweetAlert2](https://sweetalert2.github.io)
 
-## Pasos para probar el proyecto
+## Pasos para probar el proyecto 😎
 
 Si deseas probar el proyecto segui los siguientes comandos:
 
-1. tipea dentro de algun repositorio en la cual queremos clonar el proyecto el comando `git clone https://github.com/julianDev94/citasVeterinaria.git`
-2.
+1. Te posicionas dentro de un repositorio en la cual quieras realizar la copia del proyecto
+2. Abris la terminal de linea de comando
+3. tipeas el siguiente comando `git clone https://github.com/julianDev94/citasVeterinaria.git` ✅
 
-## Autor
+
+## Autor 😜
 
 - Julian Aballay
->>>>>>> logicaVeterinaria
+
