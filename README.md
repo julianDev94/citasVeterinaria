@@ -13,7 +13,7 @@ Esta aplicacion permite administrar citas para pacientes de una veterinaria. El 
 Si deseas probar el proyecto segui los siguientes comandos:
 
 1. tipea dentro de algun repositorio en la cual queremos clonar el proyecto el comando `git clone https://github.com/julianDev94/citasVeterinaria.git`
-2. 
+2.
 
 ## Autor
 
