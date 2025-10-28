@@ -1,6 +1,6 @@
 import { Button, Card, Col, Row, Form } from "react-bootstrap";
 
-const CitasVeterinaria = ({ citas }) => {
+const CitasVeterinaria = ({ citas, borrarCita }) => {
   return (
     <section className="my-3">
       {citas.length === 0 ? (
@@ -69,7 +69,9 @@ const CitasVeterinaria = ({ citas }) => {
                   </Form.Group>
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-end">
-                  <Button variant="danger">Borrar</Button>
+                  <Button variant="danger" onClick={()=>
+                    
+                    borrarCita(idx)}>Borrar</Button>
                 </Card.Footer>
               </Card>
             </Col>
